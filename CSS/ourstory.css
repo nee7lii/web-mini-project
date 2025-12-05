@@ -1,0 +1,468 @@
+
+
+
+/* 
+   OUR STORY HERO 
+*/
+.story-hero {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #000;
+  margin-top: 73px;
+}
+
+/* Background image */
+.story-hero__bg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../Images/ooo.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
+}
+
+/* Soft dark overlay for readability */
+.story-hero__overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Text content */
+.story-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  max-width: 900px;
+  padding: 45px 90px;
+}
+
+/* Small upper label */
+.story-hero__kicker {
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  opacity: 0.95;
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* Main title */
+.story-hero__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: clamp(38px, 5vw, 54px);
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Paragraph u*/
+.story-hero__subtitle {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 700px;
+  font-family: "Cormorant Garamond", serif;
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Hero responsive */
+@media (max-width: 768px) {
+  .story-hero {
+    min-height: calc(100vh - 72px);
+  }
+
+  .story-hero__title {
+    font-size: 38px;
+  }
+
+  .story-hero__subtitle {
+    font-size: 16px;
+    padding: 0 6px;
+  }
+}
+
+
+/* 
+   STORY SPLIT SECTION
+*/
+.story-split {
+  background: #fff;
+  padding: 110px 0 90px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.story-split-container {
+  max-width: 2100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.story-split-text {
+  padding-top: 10px;
+}
+
+.story-split-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-bottom: 22px;
+  color: #1f1a17;
+}
+
+.story-split-text p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #3f3a36;
+  max-width: 620px;
+  margin-bottom: 14px;
+}
+
+.story-split-image {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.story-split-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Split responsive */
+@media (max-width: 900px) {
+  .story-split {
+    padding: 80px 0;
+  }
+
+  .story-split-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .story-split-text h2 {
+    font-size: 36px;
+  }
+
+  .story-split-text p {
+    font-size: 16px;
+    max-width: none;
+  }
+}
+
+
+/* 
+   ATLAS SECTION (Image Left / Text Right)
+] */
+.atlas-section {
+  background: #f8f5f0;
+  padding: 96px 0;
+}
+
+.atlas-container {
+  max-width: 2100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.atlas-content {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Image */
+.atlas-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: clamp(540px, 60vw, 660px);
+  margin: 0;
+}
+
+.atlas-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+/* Text */
+.atlas-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: start;
+}
+
+.atlas-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.atlas-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* Atlas responsive */
+@media (max-width: 900px) {
+  .atlas-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .atlas-image {
+    height: clamp(320px, 70vw, 460px);
+  }
+
+  .atlas-text h2 {
+    font-size: 38px;
+  }
+
+  .atlas-text p {
+    font-size: 16px;
+    max-width: none;
+  }
+}
+
+
+/* 
+   PHILOSOPHY SECTION (Text Left / 3 Images Right)
+*/
+.philosophy-section {
+  background: #ffffff;
+  padding: 96px 0;
+}
+
+.philosophy-container {
+  max-width: 2100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.philosophy-content {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Text */
+.philosophy-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.philosophy-text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.philosophy-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* Gallery */
+.philosophy-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.philosophy-gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: clamp(240px, 22vw, 320px);
+}
+
+.philosophy-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.philosophy-gallery .gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+.philosophy-gallery .item-3 {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(72%, 900px);
+  height: clamp(280px, 26vw, 380px);
+}
+
+/* Philosophy responsive */
+@media (max-width: 900px) {
+  .philosophy-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .philosophy-text h2 {
+    font-size: 38px;
+  }
+
+  .philosophy-text p {
+    font-size: 16px;
+    max-width: none;
+  }
+
+  .philosophy-gallery {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .philosophy-gallery .gallery-item {
+    height: clamp(240px, 60vw, 340px);
+  }
+
+  .philosophy-gallery .item-3 {
+    width: 100%;
+    height: clamp(240px, 60vw, 360px);
+  }
+}
+
+
+/* 
+   PROMISE SECTION
+*/
+.promise-section {
+  background: #f8f5f0;
+  padding: 96px 0;
+}
+
+.promise-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.promise-container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+
+.promise-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #222222;
+}
+
+/* Promise responsive */
+@media (max-width: 900px) {
+  .promise-container h2 {
+    font-size: 34px;
+  }
+
+  .promise-container p {
+    font-size: 16px;
+    max-width: none;
+  }
+}
+
+
+/* 
+   STORY CTA SECTION
+ */
+.story-cta-section {
+  background: #ffffff;
+  padding: 96px 0 120px;
+}
+
+.story-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.story-cta-container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+}
+
+.story-cta-container p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #222222;
+  margin-bottom: 26px;
+}
+
+.story-cta-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  border: 1px solid #111111;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #111111;
+  transition: all 0.3s ease;
+}
+
+.story-cta-btn:hover {
+  background: #5b4626;
+  color: #ffffff;
+}
+
+/* CTA responsive */
+@media (max-width: 900px) {
+  .story-cta-container h2 {
+    font-size: 34px;
+  }
+
+  .story-cta-container p {
+    font-size: 16px;
+  }
+}

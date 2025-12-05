@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../CSS/Contact.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Playfair+Display:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <div class="container-nav">
+        <nav class="nav-left">
+          <a href="../HTML/shop.html">Shop</a>
+          <a href="../HTML/craft.html">Craft</a>
+        </nav>
+
+        <a class="brand" href="../index.html">BeniCraft</a>
+
+        <nav class="nav-right">
+          <a href="../HTML/ourstory.html">Our Story</a>
+          <a href="../HTML/contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <section>
+      <div class="contact-wrapper">
+        <!-- TOP: text + image -->
+        <div class="contact-top">
+          <div class="contact-left">
+            <h1>Contact Us</h1>
+            <p>
+              Need a custom size? A different color? We're here to make it happen.
+              You can use the contact form below, or email us directly at
+              <a href="mailto:hellobenicraft.com">hellobenicraft@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-right">
+            <img src="../Images/con.jpeg" alt="contact hero" />
+          </div>
+        </div>
+
+        <hr class="contact-divider" />
+
+        <!-- FORM -->
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="full-name"></label>
+            <input id="full-name" type="text" required placeholder="FULL NAME*" />
+          </div>
+
+          <div class="form-row two-cols">
+            <div>
+              <label for="email"></label>
+              <input id="email" type="email" required placeholder="EMAIL*" />
+            </div>
+
+            <div>
+              <label for="phone"></label>
+              <input
+                id="phone"
+                type="tel"
+                pattern="[0-9]{9,15}"
+                placeholder="PHONE"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="message"></label>
+            <textarea
+              id="message"
+              rows="6"
+              required
+              placeholder="MESSAGE*"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">SUBMIT INQUIRY</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>RUGS</h4>
+            <ul>
+              <li><a href="../HTML/shop.html">Bestsellers</a></li>
+              <li><a href="../HTML/shop.html">New Arrivals</a></li>
+              <li><a href="../HTML/shop.html">Ready to Ship</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>BENI</h4>
+            <ul>
+              <li><a href="../HTML/contact.html">Contact US</a></li>
+              <li><a href="../HTML/ourstory.html">Our Story</a></li>
+              <li><a href="../HTML/craft.html">Craft</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>SUPPORT</h4>
+            <ul>
+              <li><a href="../HTML/contact.html">FAQ</a></li>
+              <li><a href="../HTML/contact.html">Returns</a></li>
+              <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>COMMUNITY</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 BENI</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

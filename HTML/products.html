@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Playfair+Display:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../CSS/products.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <title>BeniCraft</title>
+  </head>
+
+  <body>
+    <!--  HEADER -->
+    <header>
+      <div class="container-nav">
+        <nav class="nav-left">
+          <a href="../HTML/shop.html">Shop</a>
+          <a href="../HTML/craft.html">Craft</a>
+        </nav>
+        <a class="brand" href="../index.html">BeniCraft</a>
+        <nav class="nav-right">
+          <a href="../HTML/ourstory.html">Our Story</a>
+          <a href="../HTML/contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- PRODUCT PAGE  -->
+    <section class="product-page">
+      <div class="product-container">
+        <!-- LEFT -->
+        <div class="product-info">
+          <div class="breadcrumb">Shop / Collection / Rug</div>
+
+          <div class="product-head">
+            <h1 id="product-title">Rug Title</h1>
+
+            <div class="price-wrap">
+              <div id="product-price" class="price">from $0</div>
+              <div id="imperfection-note" class="imperfection"></div>
+            </div>
+          </div>
+
+          <p id="product-desc" class="product-desc"></p>
+
+          <!-- SIZE TILES -->
+          <div class="size-tiles-section">
+            <label class="field-label">Size</label>
+            <div class="size-tiles" id="sizeTiles"></div>
+          </div>
+
+          <a href="../HTML/checkout.html" class="add-to-cart" id="addToCartBtn">
+            ADD TO CART <span id="cart-price">$0</span>
+          </a>
+
+          <!-- ACCORDION -->
+          <div class="hover-accordion">
+            <div class="ha-item">
+              <div class="ha-header">
+                <h3>Craft</h3><span class="ha-plus">+</span>
+              </div>
+              <div class="ha-content"><p>Each piece is thoughtfully handcrafted by skilled artisans using traditional techniques.</p></div>
+            </div>
+
+            <div class="ha-item">
+              <div class="ha-header">
+                <h3>Natural Variations</h3><span class="ha-plus">+</span>
+              </div>
+              <div class="ha-content"><p>Subtle differences in color and texture are natural and make every item truly one of a kind.</p></div>
+            </div>
+
+            <div class="ha-item">
+              <div class="ha-header">
+                <h3>Care</h3><span class="ha-plus">+</span>
+              </div>
+              <div class="ha-content"><p>Gently vacuum or shake to remove dust. Spot clean with mild soap and avoid harsh chemicals.</p></div>
+            </div>
+
+            <div class="ha-item">
+              <div class="ha-header">
+                <h3>Shipping & Returns</h3><span class="ha-plus">+</span>
+              </div>
+              <div class="ha-content"><p>Orders ship quickly, and returns are accepted within 30 days if the item is unused and in original condition.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MIDDLE -->
+        <aside class="atlas-thread">
+          <div class="thread-block">
+            <div class="thread-label">Origin</div>
+            <div class="thread-value">—</div>
+          </div>
+          <div class="thread-line"></div>
+
+          <div class="thread-block">
+            <div class="thread-label">Material</div>
+            <div class="thread-value">—</div>
+          </div>
+          <div class="thread-line"></div>
+
+          <div class="thread-block">
+            <div class="thread-label">Weave Time</div>
+            <div class="thread-value">—</div>
+          </div>
+          <div class="thread-line"></div>
+
+          <div class="thread-block">
+            <div class="thread-label">Finish</div>
+            <div class="thread-value">—</div>
+          </div>
+        </aside>
+
+        <!-- RIGHT -->
+        <div class="product-image">
+          <img id="product-image" src="" alt="rug image" />
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/products.js"></script>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>RUGS</h4>
+            <ul>
+              <li><a href="../HTML/shop.html">Bestsellers</a></li>
+              <li><a href="../HTML/shop.html">New Arrivals</a></li>
+              <li><a href="../HTML/shop.html">Ready to Ship</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>BENI</h4>
+            <ul>
+              <li><a href="../HTML/contact.html">Contact Us</a></li>
+              <li><a href="../HTML/ourstory.html">Our Story</a></li>
+              <li><a href="../HTML/craft.html">Craft</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>SUPPORT</h4>
+            <ul>
+              <li><a href="../HTML/contact.html">Returns</a></li>
+              <li><a href="../HTML/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>COMMUNITY</h4>
+            <ul>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 BENI</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

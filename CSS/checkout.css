@@ -1,0 +1,119 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+}
+
+body {
+  background: #fff;
+  color: #1f1a17;
+  font-size: 18px;
+}
+
+/* wrapper */
+.checkout-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 15px 80px; /* under header */
+}
+
+/* blocks */
+.checkout-block {
+  margin-bottom: 45px;
+}
+
+.checkout-block h1,
+.checkout-block h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-bottom: 18px;
+}
+
+/* inputs */
+.checkout-form input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  margin-bottom: 14px;
+}
+
+.checkout-form input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* rows */
+.two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.three-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+/* checkbox */
+
+.check-row{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  gap: 10px;
+  font-size: 14px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+
+.check-row input[type="checkbox"]{
+  
+  width: 18px;
+  height: 18px;
+  accent-color: #5b4626;
+}
+
+
+/* note */
+.note {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* button */
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: #5b4626;
+  color: white;
+  border: none;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  opacity: 0.9;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .two-cols,
+  .three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-block h1,
+  .checkout-block h2 {
+    font-size: 30px;
+  }
+}

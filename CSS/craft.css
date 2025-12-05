@@ -1,0 +1,476 @@
+
+
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 
+   HERO
+*/
+.craft-hero {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: flex-end;
+}
+
+.craft-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.craft-hero-image {
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.craft-hero-text {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+  padding: 0 40px 60px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  letter-spacing: 0.18em;
+}
+
+.craft-hero-kicker {
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.craft-hero-title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+
+.craft-hero-subtitle {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 1.6;
+  max-width: 520px;
+  color: #ffffff;
+}
+
+/* 
+   OUR STUDIO SECTION
+ */
+.craft-studio {
+  width: 100%;
+  margin: 15px 10px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 56px;
+  margin-bottom: 80px;
+  margin-top: 90px;
+}
+
+.craft-studio-text {
+  font-family: "Cormorant Garamond", serif;
+  color: #1f1a17;
+  max-width: 520px;
+}
+
+.craft-studio-kicker {
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #666666;
+  margin: 0 0 10px;
+}
+
+.craft-studio-title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin: 0 0 18px;
+  color: #1f1a17;
+}
+
+.craft-studio-text p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0 0 14px;
+  color: #444444;
+}
+
+.craft-studio-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 
+   CRAFT PROCESS – 4 CARDS
+ */
+.craft-process {
+  background: #f8f5f0;
+  padding: 20px 40px;
+}
+
+.craft-process-header {
+  max-width: 100%;
+  margin: 0 auto 36px;
+}
+
+.craft-process-kicker {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 8px;
+}
+
+.craft-process-title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin: 0;
+  color: #1f1a17;
+}
+
+.craft-process-cards {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.process-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+.process-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.process-card:hover img {
+  transform: scale(1.05);
+}
+
+.process-card-body {
+  padding: 16px 14px 18px;
+  font-family: "Cormorant Garamond", serif;
+  color: #1f1a17;
+}
+
+.process-card-body h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 10px 0 10px;
+  color: #000000;
+}
+
+.process-card-body p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  color: #444444;
+}
+
+/* 
+   TECHNIQUES SECTION
+= */
+.craft-techniques {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 120px 20px;
+}
+
+.tech-header {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.tech-kicker {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.tech-title {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.tech-sub {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444444;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tech-grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.tech-card {
+  padding: 18px 18px;
+  font-family: "Cormorant Garamond", serif;
+  color: #1f1a17;
+}
+
+.tech-card h3 {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #000000;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.tech-card p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #444444;
+}
+
+/* text wrapping */
+.process-card-body,
+.tech-card {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 
+   ATELIER SECTION
+ */
+.craft-atelier {
+  background: #f8f5f0;
+  padding: 100px 20px;
+}
+
+.atelier-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.atelier-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.atelier-content {
+  font-family: "Cormorant Garamond", serif;
+  color: #1f1a17;
+}
+
+.atelier-kicker {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #666666;
+}
+
+.atelier-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+.atelier-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #444444;
+}
+
+
+
+
+
+/* 
+   FINAL CTA SECTION
+*/
+.craft-final {
+  background-color: #ffffff;
+  padding: 100px 30px;
+  text-align: center;
+}
+
+.final-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.final-kicker {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.final-title {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #1f1a17;
+  margin-bottom: 20px;
+}
+
+.final-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444444;
+  margin-bottom: 35px;
+}
+
+
+
+/* 
+   RESPONSIVE
+*/
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .craft-process-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small tablets + large phones */
+@media (max-width: 900px) {
+  .craft-studio {
+    padding: 0 24px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .craft-studio-image {
+    order: -1; 
+  }
+
+  .atelier-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .atelier-image img {
+    height: 320px;
+  }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  .craft-process {
+    padding: 60px 16px 70px;
+  }
+
+  .craft-process-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .craft-process-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .craft-studio {
+    margin: 60px auto;
+    padding: 0 16px;
+  }
+
+  .craft-studio-title {
+    font-size: 36px;
+  }
+
+  .craft-studio-text p {
+    font-size: 16px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-title {
+    font-size: 32px;
+  }
+
+  .tech-sub {
+    font-size: 16px;
+  }
+
+  .final-title {
+    font-size: 36px;
+  }
+
+  .final-text {
+    font-size: 16px;
+  }
+
+  .craft-hero-title {
+    font-size: 36px;
+  }
+
+  .craft-hero-text {
+    padding: 0 20px 50px;
+  }
+}

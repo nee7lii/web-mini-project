@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Playfair+Display:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="../CSS/index.css">
+  <link rel="stylesheet" href="../CSS/checkout.css">
+
+  <title>Checkout</title>
+</head>
+
+<body>
+
+<header>
+  <div class="container-nav">
+    <nav class="nav-left">
+      <a href="../HTML/shop.html">Shop</a>
+      <a href="../HTML/craft.html">Craft</a>
+    </nav>
+    <a class="brand" href="../index.html">BeniCraft</a>
+    <nav class="nav-right">
+      <a href="../HTML/ourstory.html">Our Story</a>
+      <a href="../HTML/contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="checkout-wrapper">
+
+  <!-- REAL FORM -->
+  <form class="checkout-form" action="#" method="post">
+
+    <!-- CONTACT -->
+    <div class="checkout-block">
+      <h1>Contact</h1>
+
+     <input type="email" name="email" placeholder="Email*" required>
+
+<label class="check-row">
+  <input type="checkbox" name="offers" checked>
+  <span>Email me with news and offers</span>
+</label>
+
+    </div>
+
+
+    <!-- DELIVERY -->
+    <div class="checkout-block">
+      <h2>Delivery</h2>
+
+      <input type="text" name="country" placeholder="Country / Region*" required>
+
+      <div class="two-cols">
+        <input type="text" name="first_name" placeholder="First name*" required pattern="[A-Za-z]+" title="First name should only contain letters.">
+        <input type="text" name="last_name" placeholder="Last name*" required pattern="[A-Za-z]+" title="Last name should only contain letters.">
+      </div>
+
+      <input type="text" name="address" placeholder="Address*" required >
+      <input type="text" name="apartment" placeholder="Apartment, suite, etc. (optional)">
+
+      <div class="three-cols">
+        <input type="text" name="city" placeholder="City*" required pattern="[A-Za-z\s]+" title="City should only contain letters and spaces.">
+        <input type="text" name="state" placeholder="State / Province*" required pattern="[A-Za-z\s]+" title="State/Province should only contain letters and spaces.">
+        <input type="text" name="zip" placeholder="ZIP / Postal code*" required pattern="[A-Za-z0-9\s\-]+" title="ZIP/Postal code should only contain letters, numbers, spaces, and hyphens.">
+      </div>
+
+      <input type="number" name="phone" placeholder="Phone" pattern="^\+?[0-9\s\-()]{7,15}$" title="Please enter a valid phone number." required>
+    </div>
+
+
+    <!-- PAYMENT -->
+    <div class="checkout-block">
+      <h2>Payment</h2>
+      <p class="note">All transactions are secure and encrypted.</p>
+
+      <input type="text" name="card_number" placeholder="Card number*" required pattern="^\d{13,19}$" title="Card number should be between 13 and 19 digits.">
+
+      <div class="two-cols">
+        <input type="text" name="exp_date" placeholder="Expiration date (MM/YY)*" required pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$" title="Expiration date should be in MM/YY format.">
+        <input type="text" name="cvc" placeholder="Security code*" required pattern="^\d{3,4}$" title="CVC should be 3 or 4 digits.">
+      </div>
+
+      <input type="text" name="card_name" placeholder="Name on card*" required pattern="[A-Za-z\s]+" title="Name on card should only contain letters and spaces.">
+
+      <label class="check-row">
+        <input type="checkbox" name="billing_same" checked>
+        Use shipping address as billing address
+      </label>
+    </div>
+
+
+    <!-- SUBMIT BUTTON -->
+    <button class="pay-btn" type="submit">Pay now</button>
+
+  </form>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>RUGS</h4>
+        <ul>
+          <li><a href="../HTML/shop.html">Bestsellers</a></li>
+          <li><a href="../HTML/shop.html">New Arrivals</a></li>
+          <li><a href="../HTML/shop.html">Ready to Ship</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>BENI</h4>
+        <ul>
+          <li><a href="../HTML/contact.html">Contact Us</a></li>
+          <li><a href="../HTML/ourstory.html">Our Story</a></li>
+          <li><a href="../HTML/craft.html">Craft</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="../HTML/contact.html">Returns</a></li>
+          <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>COMMUNITY</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 BENI</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
